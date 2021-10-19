@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="ko" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
+    <title>recofilm</title>
+
+    <link rel="stylesheet" href="css/join.css">
+	<link rel="stylesheet" href="css/header.css">
+	<link rel="stylesheet" href="css/footer.css">
+	<link rel="stylesheet" href="css/popup_search.css">
+</head>
+<body>
+    <div id="wrap">
+		<div th:replace="/repeat/header.html :: header"></div>
+		<div th:replace="/repeat/header.html :: menu"></div>
+
+        <div id="content-wrap">
+
+			<div class="inner_login">
+				<div class="login_tistory">
+			
+					<form method="post" id="authForm" action="">
+						<fieldset>
+							<p class="login_title">회원가입</p>
+						<div class="box_login">
+							<div class="inp_text">
+								<p class="login_subTitle">아이디</p>
+								<input type="email" id="loginId" name="loginId" placeholder="아이디 또는 이메일 입력" >
+								<p class="login_subTitle">비밀번호</p>
+								<input type="password" placeholder="비밀번호 (8~20자리 영문, 숫자 조합)" >
+								<input type="password" placeholder="비밀번호 재입력" >
+								<p class="login_subTitle">닉네임</p>
+								<input type="text" placeholder="닉네임 입력" >
+								<p class="login_subTitle">이메일</p>
+								<input type="email" placeholder="이메일 입력" >
+							</div>
+						</div>
+						<div class="login_join">
+							<button type="submit" class="btn_login" th:href="@{join}">가입하기</button>
+							<button type="submit" class="btn_join" th:href="@{index}">취소</button>
+						</div>
+						
+						</fieldset>
+					</form>
+					
+				</div>
+			</div>
+			
+        </div>
+
+		<div th:replace="/repeat/footer.html :: footer"></div>
+
+    </div>
+
+	<div th:replace="/repeat/popup_search.html :: popup_search"></div>
+	<script src="./js/popup_search.js"></script>
+</body>
+</html>
