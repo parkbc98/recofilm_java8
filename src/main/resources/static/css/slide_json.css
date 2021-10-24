@@ -4,7 +4,9 @@
   padding: 0 0 30px 0;
   margin-top: 20px;
 }
-
+.swiper-wrapper {
+  margin-bottom: 20px;
+}
 .swiper-slide {
   text-align: center;
   font-size: 18px;
@@ -28,15 +30,13 @@
   height: 420px;
   object-fit: cover;
 }
-
-.swiper-button-next {
-  position: absolute;
-  left: 66.1%;
-  background-color: transparent;
+.swiper-pagination-bullet {
+  width: 13px;
+  height: 13px;
+  background: #bfbfbf;
 }
-
-.swiper-button-prev {
-  position: absolute;
-  left: 32.4%;
-  background-color: transparent;
+.swiper-pagination-bullet-active {
+  width: 13px;
+  height: 13px;
+  background: #a835c6;
 }

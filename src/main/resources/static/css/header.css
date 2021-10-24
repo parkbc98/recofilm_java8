@@ -1,3 +1,7 @@
+@font-face {
+  font-family: 'EliceDigitalBaeum_Regular';
+  src: url('font/EliceDigitalBaeumOTF_Regular.otf') format('truetype');
+}
 /*기본*/
 
 #header-wrap {
@@ -70,6 +74,7 @@
   line-height: 40px;
   vertical-align: middle;
   text-align: center;
+  font-family: 'EliceDigitalBaeum_Regular';
 }
 .menuLink {
   /* 상위 메뉴와 하위 메뉴의 a 태그에 공통으로 설정할 스타일 */

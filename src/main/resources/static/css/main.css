@@ -21,7 +21,8 @@ ul li {
 
 .banner-container {
   width: 1000px;
-  height: 300px;
+  overflow:hidden;
+  height:auto;
   line-height: 300px;
   margin: 0 auto;
   list-style: none;
@@ -44,17 +45,17 @@ ul li {
   text-align: center;
   margin: 20px 0 0 35px;
 }
-
 .content_item > ul > li > a > img {
   width: 280px;
   height: 400px;
 }
-
 .content_item_name {
-  margin-top: 3px;
   font-size: 20px;
-  color: #fff;
+  color: #a9a9a9;
+  background-color: #1c1c1c;
+  line-height: 44px;
 }
+
 
 .content_clear {
   clear: both;

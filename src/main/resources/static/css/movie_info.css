@@ -16,8 +16,9 @@ ul li {
   width: 100%;
 }
 .content-container {
-  width: 70%;
-  height: 1200px;
+  width: 90%;
+  overflow:hidden;
+  height:auto;
   margin: 30px auto;
   color: #fff;
 }
@@ -31,11 +32,12 @@ ul li {
   position: relative;
   top: 2%;
   left: 50%;
-  transform: translate(-40%, 0);
+  transform: translate(-35%, 0);
+  margin-bottom: 180px;
 }
 .movie_info_poster {
-  width: 30%;
-  height: auto;
+  width: 404px;
+  height: 570px;
   margin-right: 20px;
 }
 .movie_infomation {
@@ -43,27 +45,49 @@ ul li {
   height: auto;
 }
 .movie_name {
-  font-size: 32px;
+  font-size: 50px;
   color: #ffffff;
+  margin-bottom: 12px;
 }
-.movie_genre .movie_playtime .movie_vote {
+.movie_genre {
+  margin-right: 38px;
+  margin-left: 5px;
   font-size: 21px;
-  color: gray;
+  color: #dadada;
+}
+.movie_playtime {
+  margin-right: 38px;
+  font-size: 21px;
+  color: #dadada;
+}
+.movie_vote {
+  font-size: 21px;
+  color: #dadada;
+}
+.vote_star {
+  color: #d14b4b;
+}
+.movie_upcoming_date {
+  margin: 13px 0 64px 0;
 }
 .upcoming_title {
   font-size: 21px;
-  color: #ffffff;
+  color: #989898;
 }
 .upcoming_date {
   font-size: 21px;
-  color: gray;
+  color: #dadada;
 }
 .movie_storyLine_title {
-  background-color: #313334;
+  background-color: #5f5f5f;
   color: #ffffff;
   border: none;
-  width: 80px;
+  width: 219px;
   height: auto;
+  line-height: 38px;
+  text-align: center;
+  font-size: 17px;
+  margin-bottom: 17px;
 }
 .movie_storyLine {
   width: 70%;
@@ -71,12 +95,13 @@ ul li {
 }
 
 .similar_title {
-  font-size: 25px;
-  color: #ffffff;
+  font-size: 30px;
+  color: #dbdbdb;
   position: relative;
   top: 5%;
   left: 7%;
   transform: translate(0, 0);
+  margin-bottom: 21px;
 }
 
 .similar {
@@ -88,20 +113,28 @@ ul li {
   position: relative;
   top: 7%;
   left: 50%;
-  transform: translate(-50%, 0);
+  transform: translate(-48%, 0);
+  margin-bottom: 150px;
 }
 ul li {
   list-style: none;
 }
+ul {
+  margin-right: 21px;
+}
 .similar_item > ul > li > a > img {
-  width: 80%;
-  height: auto;
+  width: 272px;
+  height: 385px;
+  margin-bottom: 0px;
 }
 
 .similar_item_name {
   margin-top: 3px;
   font-size: 20px;
-  color: #fff;
+  color: #a9a9a9;
+  background-color: #1c1c1c;
+  line-height: 46px;
+  margin-top: 0px;
 }
 
 .similar_clear {

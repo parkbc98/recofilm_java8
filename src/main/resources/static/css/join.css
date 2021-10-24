@@ -17,7 +17,8 @@ ul li {
 }
 .content-container {
   width: 1100px;
-  height: 3000px;
+  overflow:hidden;
+  height:auto;
   margin: 30px auto;
   color: #fff;
 }
@@ -117,6 +118,17 @@ img {
   margin-bottom: 50px;
   padding-left: 20px;
 }
+#pw2 {
+  margin-bottom: 26px;
+}
+#check {
+  margin-left: 5px;
+  margin-bottom: 50px;
+}
+#check2 {
+  margin-left: 5px;
+  margin-bottom: 50px;
+}
 .login_join {
   width: 263px;
   position: relative;
@@ -156,16 +168,6 @@ img {
 }
 .login_append .inp_chk {
   float: left;
-}
-.inp_chk > .inp_radio { /* 로그인 유지 박스 */
-  position: relative;
-  top: 0;
-  left: 0;
-  width: 25px;
-  height: 25px;
-  border: 0;
-  background-color: #ffffff;
-  margin: 0 auto;
 }
 .inp_chk .lab_g {
   display: inline-block;
