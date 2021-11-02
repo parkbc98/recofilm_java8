@@ -48,12 +48,14 @@ ul li {
 .content_item > ul > li > a > img {
   width: 280px;
   height: 400px;
+  margin-bottom: -3px;
 }
 .content_item_name {
   font-size: 20px;
   color: #a9a9a9;
   background-color: #1c1c1c;
   line-height: 44px;
+  margin-top: -4px;
 }
 
 .content_clear {

@@ -35,10 +35,10 @@ public class IndexController {
     public String home(){ return "index"; }
 
     @GetMapping("login")
-    public String login(){ return "login"; }
+    public String login(){ return "login/login"; }
 
     @GetMapping("join")
-    public String join(){ return "join"; }
+    public String join(){ return "login/join"; }
 
     @GetMapping("movie_info")
     public String movie_info(){ return "movie_info"; }
@@ -47,19 +47,19 @@ public class IndexController {
     public String search_result(){ return "search_result"; }
 
     @GetMapping("now_playing")
-    public String now_playing(){ return "now_playing"; }
+    public String now_playing(){ return "category/now_playing"; }
 
     @GetMapping("upcoming")
-    public String upcoming(){ return "upcoming"; }
+    public String upcoming(){ return "category/upcoming"; }
 
     @GetMapping("rate")
-    public String rate(){ return "rate"; }
+    public String rate(){ return "category/rate"; }
 
     @GetMapping("board")
-    public String board(){ return "board"; }
+    public String board(){ return "board/board"; }
 
     @GetMapping("view")
-    public String view(){ return "view"; }
+    public String view(){ return "board/view"; }
 
 //    @GetMapping("/test2")
 //    private String getRankData(Model model) {
