@@ -58,6 +58,9 @@ public class IndexController {
     @GetMapping("board")
     public String board(){ return "board"; }
 
+    @GetMapping("view")
+    public String view(){ return "view"; }
+
 //    @GetMapping("/test2")
 //    private String getRankData(Model model) {
 //        List<MovieRankDto> dtoList = movieService.sortPopularMovie();

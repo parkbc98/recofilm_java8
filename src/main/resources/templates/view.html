@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="ko" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
+    <title>recofilm</title>
+
+    <link rel="stylesheet" href="css/view.css">
+	<link rel="stylesheet" href="css/header.css">
+	<link rel="stylesheet" href="css/footer.css">
+	<link rel="stylesheet" href="css/popup_search.css">
+</head>
+<body>
+    <div id="wrap">
+		<div th:replace="/repeat/header.html :: header"></div>
+		<div th:replace="/repeat/header.html :: menu"></div>
+
+        <div id="content-wrap">
+			<div class="content-container">
+				<div class="view_header">
+					<div class="title"><span id="view_title">[자유글]</span> 영화 추천합니다~!</div>
+					<div class="regtime_hits">
+						<span id="regtime">2021-01-01</span>
+						<span id="hits">조회 <span id="hits_num">120</span></span>
+					</div>
+				</div>
+			</div>
+        </div>
+
+		<div th:replace="/repeat/footer.html :: footer"></div>
+
+    </div>
+
+	<div th:replace="/repeat/popup_search.html :: popup_search"></div>
+	<script src="./js/popup_search.js"></script>
+</body>
+</html>

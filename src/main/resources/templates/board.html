@@ -54,7 +54,7 @@
 					<tr>
 						<td>5</td>
 						<td>[자유글]</td>
-						<td><a href="">영화 추천합니다~!</a></td>
+						<td><a href="" th:href="@{view}">영화 추천합니다~!</a></td>
 						<td>asdf</td>
 						<td>2021-01-01</td>
 						<td>0</td>
@@ -62,7 +62,7 @@
 					<tr>
 						<td>4</td>
 						<td>[자유글]</td>
-						<td><a href="">영화 추천합니다~!</a></td>
+						<td><a href="" th:href="@{view}">영화 추천합니다~!</a></td>
 						<td>asdf</td>
 						<td>2021-01-01</td>
 						<td>0</td>
@@ -70,7 +70,7 @@
 					<tr>
 						<td>3</td>
 						<td>[자유글]</td>
-						<td><a href="">영화 추천합니다~!</a></td>
+						<td><a href="" th:href="@{view}">영화 추천합니다~!</a></td>
 						<td>asdf</td>
 						<td>2021-01-01</td>
 						<td>0</td>
@@ -78,7 +78,7 @@
 					<tr>
 						<td>2</td>
 						<td>[자유글]</td>
-						<td><a href="">영화 추천합니다~!</a></td>
+						<td><a href="" th:href="@{view}">영화 추천합니다~!</a></td>
 						<td>asdf</td>
 						<td>2021-01-01</td>
 						<td>0</td>
@@ -86,7 +86,7 @@
 					<tr>
 						<td>1</td>
 						<td>[자유글]</td>
-						<td><a href="">영화 추천합니다~!</a></td>
+						<td><a href="" th:href="@{view}">영화 추천합니다~!</a></td>
 						<td>asdf</td>
 						<td>2021-01-01</td>
 						<td>0</td>
@@ -98,7 +98,7 @@
 						<option value="작성자">작성자</option>
 					</select>
 					<div class="search_box">
-						<form th:action="@{board}" accept-charset="utf-8" name = "search_info" method = "get">
+						<form th:href="@{board}" accept-charset="utf-8" name = "search_info" method = "get">
 							<input type="text" id="search_text" placeholder="검색어를 입력하세요">
 							<button id="search_button" type="submit">검색</button>
 						</form>
