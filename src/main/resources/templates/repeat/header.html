@@ -23,16 +23,16 @@
 						<li><a href="" class="submenuLink longLink">나만의 영화</a></li>
 					</ul> 
 				</li>
-				<li class="topMenuLi"> <a class="menuLink" href="">카테고리</a> 
+				<li class="topMenuLi"> <a class="menuLink" th:href="@{rate}">카테고리</a>
 					<ul class="submenu"> 
-						<li><a href="" class="submenuLink">평점</a></li>
+						<li><a href="" class="submenuLink" th:href="@{rate}">평점</a></li>
 						<li><a href="" class="submenuLink" th:href="@{now_playing}">상영중</a></li>
 						<li><a href="" class="submenuLink" th:href="@{upcoming}">개봉예정</a></li>
 						<li><a href="" class="submenuLink">인기</a></li>
 					</ul> 
 				</li>
 				<li class="topMenuLi"> <a class="menuLink" href="#" th:href="@{recofilm_info}">recofilm소개</a> </li>
-				<li class="topMenuLi"> <a class="menuLink" href="#">커뮤니티</a></li>
+				<li class="topMenuLi"> <a class="menuLink" href="#" th:href="@{board}">커뮤니티</a></li>
 			</ul> 
 		</nav>
 	</div>
