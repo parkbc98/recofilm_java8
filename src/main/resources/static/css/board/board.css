@@ -30,14 +30,34 @@ a {
 }
 
 /*콘텐츠*/
-
-/*테이블*/
-#table_title {
+.board_title {
+  width: 1142px;
+  height: 44px;
   position: relative;
-  left: 17%;
-  margin: 0 0 15px 0;
+  left: 50%;
+  transform: translateX(-50%);
+  margin-bottom: 16px;
+}
+.write_btn {
+  width: 91px;
+  height: 40px;
+  border-radius: 7px;
+  background-color: #a835c6;
+  float: right;
+  border: none;
+}
+.write_btn > a {
+  color: #ffffff;
+  line-height: 40px;
+  font-size: 15px;
+  background: transparent;
+}
+#table_title {
+  float: left;
   font-size: 33px;
 }
+
+/*테이블*/
 table     {
   width: 1142px;
   text-align: center;

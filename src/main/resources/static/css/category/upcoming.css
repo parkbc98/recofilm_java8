@@ -80,7 +80,7 @@ ul li {
   margin-left: 10px;
 }
 .similar {
-  width: 90%;
+  width: 1540px;
   height: auto;
   position: relative;
   top: 7%;
@@ -98,7 +98,8 @@ ul li {
 .similar_item > ul > li > a > img {
   width: 266px;
   height: auto;
-  margin-bottom: 0px;
+  margin-bottom: -3px;
+  margin-top: -4px;
 }
 
 .similar_item_name {

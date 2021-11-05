@@ -5,10 +5,10 @@
     <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
     <title>recofilm</title>
 
-    <link rel="stylesheet" href="css/board.css">
-	<link rel="stylesheet" href="css/header.css">
-	<link rel="stylesheet" href="css/footer.css">
-	<link rel="stylesheet" href="css/popup_search.css">
+    <link rel="stylesheet" href="css/board/board.css">
+	<link rel="stylesheet" href="css/repeat/header.css">
+	<link rel="stylesheet" href="css/repeat/footer.css">
+	<link rel="stylesheet" href="css/repeat/popup_search.css">
 </head>
 <body>
     <div id="wrap">
@@ -17,7 +17,10 @@
 
         <div id="content-wrap">
 			<div class="content-container">
-				<h1 id="table_title">recofilm 커뮤니티</h1>
+				<div class="board_title">
+					<span><h1 id="table_title">recofilm 커뮤니티</h1></span>
+					<span><button class="write_btn"><a th:href="@{write}">글쓰기</a></button></span>
+				</div>
 				<table>
 					<tr>
 						<th class="num"    >번호    </th>

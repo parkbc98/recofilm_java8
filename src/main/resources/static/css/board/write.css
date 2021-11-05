@@ -32,19 +32,8 @@ a {
 /*콘텐츠*/
 
 /*콘텐츠 해더*/
-.view_header {
-  width: 1220px;
-  position: relative;
-  left: 50%;
-  transform: translateX(-50%);
-  border-bottom: solid #ffffff 2px;
+.write_header {
+
 }
-.title {
-  height: 46px;
-  font-size: 35px;
-  margin: 0 0 16px 0;
-}
-.view_title {
-  font-size: 26px;
-  color: #a835c6;
-}
+
+/*테이블 내용*/

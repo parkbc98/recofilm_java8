@@ -28,22 +28,23 @@ ul li {
   list-style: none;
 }
 .content-container {
-  width: 1600px;
-  height: 1650px;
+  width: 1450px;
+  height: 1950px;
   margin: auto;
 }
 
 /*콘텐츠*/
 
 .content-container h2 {
-  margin: 50px 25px 0px 42px;
+  margin: 100px 20px 0px 10px;
+  font-size: 26px;
   color: #fff;
 }
 
 .content_item {
   float: left;
   text-align: center;
-  margin: 20px 0 0 35px;
+  margin: 20px 5px 0 5px;
 }
 .content_item > ul > li > a > img {
   width: 280px;

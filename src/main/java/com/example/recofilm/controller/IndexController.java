@@ -55,11 +55,17 @@ public class IndexController {
     @GetMapping("rate")
     public String rate(){ return "category/rate"; }
 
+    @GetMapping("popular")
+    public String popular(){ return "category/popular"; }
+
     @GetMapping("board")
     public String board(){ return "board/board"; }
 
     @GetMapping("view")
     public String view(){ return "board/view"; }
+
+    @GetMapping("write")
+    public String write(){ return "board/write"; }
 
 //    @GetMapping("/test2")
 //    private String getRankData(Model model) {

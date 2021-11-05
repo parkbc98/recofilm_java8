@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
     <title>recofilm</title>
 
-    <link rel="stylesheet" href="css/board/view.css">
+    <link rel="stylesheet" href="css/board/write.css">
 	<link rel="stylesheet" href="css/repeat/header.css">
 	<link rel="stylesheet" href="css/repeat/footer.css">
 	<link rel="stylesheet" href="css/repeat/popup_search.css">
@@ -17,29 +17,30 @@
 
         <div id="content-wrap">
 			<div class="content-container">
-				<div class="view_header">
-					<div class="title"><span id="view_title">[자유글]</span> 영화 추천합니다~!</div>
-					<div class="regtime_hits">
-						<span id="regtime">2021-01-01</span>
-						<span id="hits">조회 <span id="hits_num">120</span></span>
-					</div>
+				<div class="write_header">
+
 				</div>
 
-				<table class="view_content">
-					<tr>
-						<td class="view_content_td">
-							<img src="/img/category/viewSample.png">
-							<p>
-								이영화 정말 재미있습니다. 킬링타임용으로 좋아요.
-							</p>
-						</td>
-					</tr>
-				</table>
-				<div class="control_btn_wrap">
-					<button class="control_btn"><a >수정</a></button>
-					<button class="control_btn"><a >삭제</a></button>
-					<button class="control_btn"><a th:href="@{board}">목록</a></button>
-				</div>
+				<form method="post" action="${action}">
+					<table>
+						<tr>
+							<th>제목</th>
+							<td><input type="text" name="title"  maxlength="80" value="${msg.title}"></td>
+						</tr>
+						<tr>
+							<th>작성자</th>
+							<td><input type="text" name="writer" maxlength="20" value="${msg.writer}"></td>
+						</tr>
+						<tr>
+							<th>내용</th>
+							<td><textarea name="content" rows="10">${msg.content}</textarea></td>
+						</tr>
+					</table>
+
+					<br>
+					<input type="submit" value="저장">
+					<input type="button" value="취소" onclick="history.back()">
+				</form>
 			</div>
         </div>
 
