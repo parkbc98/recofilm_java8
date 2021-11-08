@@ -161,11 +161,17 @@ input[type='radio']:checked:before {
   width: 83px;
   height: 40px;
   border: solid 2px #a835c6;
+  border-radius: 7px;
   background-color: #a835c6;
+  color: #ffffff;
+  font-size: 15px;
 }
 .btn_cancel {
   width: 83px;
   height: 40px;
   border: solid 2px #a835c6;
+  border-radius: 7px;
   background: transparent;
+  color: #a835c6;
+  font-size: 15px;
 }

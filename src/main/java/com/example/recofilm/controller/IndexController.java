@@ -67,6 +67,9 @@ public class IndexController {
     @GetMapping("write")
     public String write(){ return "board/write"; }
 
+    @GetMapping("movie_recommend")
+    public String movie_recommend(){ return "recommend/movie_recommend"; }
+
 //    @GetMapping("/test2")
 //    private String getRankData(Model model) {
 //        List<MovieRankDto> dtoList = movieService.sortPopularMovie();
