@@ -113,15 +113,16 @@ ul li {
 .similar_item > ul > li > a > img {
   width: 266px;
   height: auto;
-  margin-bottom: 0px;
+  margin-bottom: -4px;
 }
 
 .similar_item_name {
   font-size: 20px;
   color: #a9a9a9;
-  background-color: #1c1c1c;
+  background-color: #000000;
   line-height: 44px;
   margin-bottom: 80px;
+  margin-top: -3px;
 }
 
 .similar_clear {
