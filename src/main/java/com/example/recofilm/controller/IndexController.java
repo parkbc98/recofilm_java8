@@ -34,17 +34,34 @@ public class IndexController {
     @GetMapping("index")
     public String home(){ return "index"; }
 
-    @GetMapping("login")
-    public String login(){ return "login/login"; }
-
-    @GetMapping("join")
-    public String join(){ return "login/join"; }
-
     @GetMapping("movie_info")
     public String movie_info(){ return "movie_info"; }
 
     @GetMapping("search_result")
     public String search_result(){ return "search_result"; }
+
+
+    @GetMapping("login")
+    public String login(){ return "login/login"; }
+
+    @GetMapping("id_find")
+    public String id_find(){ return "login/id_find"; }
+
+    @GetMapping("id_find_success")
+    public String id_find_success(){ return "login/id_find_success"; }
+
+    @GetMapping("pw_find")
+    public String pw_find(){ return "login/pw_find"; }
+
+    @GetMapping("pw_find_success")
+    public String pw_find_success(){ return "login/pw_find_success"; }
+
+    @GetMapping("join")
+    public String join(){ return "login/join"; }
+
+    @GetMapping("join_success")
+    public String join_success(){ return "login/join_success"; }
+
 
     @GetMapping("now_playing")
     public String now_playing(){ return "category/now_playing"; }
@@ -58,6 +75,7 @@ public class IndexController {
     @GetMapping("popular")
     public String popular(){ return "category/popular"; }
 
+
     @GetMapping("board")
     public String board(){ return "board/board"; }
 
@@ -67,15 +85,13 @@ public class IndexController {
     @GetMapping("write")
     public String write(){ return "board/write"; }
 
-    @GetMapping("movie_recommend")
-    public String movie_recommend(){ return "recommend/movie_recommend"; }
 
-//    @GetMapping("/test2")
-//    private String getRankData(Model model) {
-//        List<MovieRankDto> dtoList = movieService.sortPopularMovie();
-//        model.addAttribute("dtolist", dtoList);
-//        return "test2";
-//    }
+    @GetMapping("recommend")
+    public String recommend(){ return "recommend/recommend"; }
+
+    @GetMapping("recommend_success")
+    public String recommend_success(){ return "recommend/recommend_success"; }
+
 
     @GetMapping("test")
     public String test1Page() {

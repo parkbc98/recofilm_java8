@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
     <title>recofilm</title>
 
-    <link rel="stylesheet" href="css/board/view.css">
+    <link rel="stylesheet" href="css/recommend/recommend_success.css">
 	<link rel="stylesheet" href="css/repeat/header.css">
 	<link rel="stylesheet" href="css/repeat/footer.css">
 	<link rel="stylesheet" href="css/repeat/popup_search.css">
@@ -17,29 +17,18 @@
 
         <div id="content-wrap">
 			<div class="content-container">
-				<div class="view_header">
-					<div class="title"><span id="view_title">[자유글]</span> 영화 추천합니다~!</div>
-					<div class="regtime_hits">
-						<span id="regtime">2021-01-01</span>
-						<span id="hits">조회 <span id="hits_num">120</span></span>
-					</div>
-				</div>
+				<div class="random_wrap">
+					<ul>
+						<li class="img_li"><a th:href="@{movie_info}"><img src="/img/movie002.jpg"></a></li>
+						<li class="img_name">캔디맨</li>
 
-				<table class="view_content">
-					<tr>
-						<td class="view_content_td">
-							<img src="/img/category/viewSample.png">
-							<p>
-								이영화 정말 재미있습니다. 킬링타임용으로 좋아요.
-							</p>
-						</td>
-					</tr>
-				</table>
-				<div class="control_btn_wrap">
-					<button class="btn_delete"><a th:href="@{board}">삭제</a></button>
-					<button class="btn_rewrite"><a th:href="@{write}">수정</a></button>
+						<li class="first_li">오늘 이런 영화는 어떠세요?</li>
+						<li class="second_li"><span class="pouple">reco</span><span class="white">film</span>이 추천하는 영화입니다!</li>
+						<li><button class="btn_run"><a th:href="@{recommend_success}">다시 돌리기</a></button></li>
+					</ul>
 				</div>
 			</div>
+		</div>
         </div>
 
 		<div th:replace="/repeat/footer.html :: footer"></div>

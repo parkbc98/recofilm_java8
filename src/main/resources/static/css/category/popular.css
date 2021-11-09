@@ -56,34 +56,34 @@ ul li {
 .top_three_name {
   font-size: 20px;
   color: #a9a9a9;
-  background-color: #1c1c1c;
+  background-color: #000000;
   line-height: 44px;
   margin-top: -4px;
 }
 
 .first > img {
-  width: 92px;
-  height: 109px;
+  width: 98px;
+  height: 226px;
   position: absolute;
-  left: 60px;
+  left: 54px;
   top: 0;
   transform: translate(-50%,-50%);
   background: transparent;
 }
 .second > img {
-  width: 92px;
-  height: 109px;
+  width: 98px;
+  height: 226px;
   position: absolute;
-  left: 492px;
+  left: 484px;
   top: 0;
   transform: translate(-50%,-50%);
   background: transparent;
 }
 .third > img {
-  width: 92px;
-  height: 109px;
+  width: 98px;
+  height: 226px;
   position: absolute;
-  left: 924px;
+  left: 920px;
   top: 0;
   transform: translate(-50%,-50%);
   background: transparent;
@@ -136,7 +136,7 @@ ul li {
 .similar_item_name {
   font-size: 20px;
   color: #a9a9a9;
-  background-color: #1c1c1c;
+  background-color: #000000;
   line-height: 44px;
   margin-top: -4px;
 }

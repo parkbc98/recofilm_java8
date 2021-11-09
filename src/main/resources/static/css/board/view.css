@@ -63,6 +63,7 @@ a {
   position: relative;
   left: 50%;
   transform: translateX(-50%);
+  border-bottom: solid 2px #ffffff;
 }
 .view_content_td {
   min-height: 700px;
@@ -78,17 +79,26 @@ a {
 /*컨트롤 버튼*/
 .control_btn_wrap {
   float: right;
-  margin: 0 350px 200px 0;
+  margin: 10px 280px 200px 0;
 }
-.control_btn {
-  background-color: #a835c6;
-  color: #ffffff;
+.control_btn_wrap > button {
   font-size: 17px;
   line-height: 30px;
   border-radius: 5px;
-  width: 50px;
-  border: none;
+  width: 80px;
+  height: 40px;
 }
-.control_btn > a {
+.control_btn_wrap > button > a {
   background: transparent;
+}
+.btn_rewrite {
+  background-color: #a835c6;
+  color: #ffffff;
+  border: solid 1px #a835c6;
+}
+.btn_delete {
+  border: solid 1px #a835c6;
+}
+.btn_delete > a {
+  color: #a835c6;
 }
