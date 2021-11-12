@@ -29,26 +29,9 @@ a {
   text-decoration: none;
 }
 input {
-  -webkit-writing-mode: horizontal-tb !important;
-  text-rendering: auto;
-  color: initial;
-  letter-spacing: normal;
-  word-spacing: normal;
-  text-transform: none;
-  text-indent: 0px;
-  text-shadow: none;
-  display: inline-block;
-  text-align: start;
-  -webkit-appearance: textfield;
-  background-color: white;
-  -webkit-rtl-ordering: logical;
-  cursor: text;
   margin: 10px 0 10px 0;
   padding: 1px 0px;
   border-width: 2px;
-  border-style: inset;
-  border-color: initial;
-  border-image: initial;
 }
 .inner_login {
   height: 1500px;
@@ -106,7 +89,7 @@ img {
   box-sizing: border-box;
   background-color: transparent;
 }
-.inp_text input { /* 로그인 박스 */
+.inp_text > input { /* 로그인 박스 */
   display: block;
   width: 97%;
   height: 84px;
@@ -117,6 +100,16 @@ img {
   background-color: #CDCDCD;
   margin-bottom: 50px;
   padding-left: 20px;
+}
+.inp_text > .btn_tel_check {
+  background-color: #ffffff;
+  color: #000000;
+  width: 159px;
+  height: 62px;
+  padding: 0 0 0 0;
+  position: absolute;
+  top: 898px;
+  left: 650px;
 }
 #pw2 {
   margin-bottom: 26px;
@@ -197,3 +190,4 @@ img {
 .link_find {
   color: #ffffff;
 }
+
