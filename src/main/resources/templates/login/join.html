@@ -10,6 +10,7 @@
 	<link rel="stylesheet" href="css/repeat/footer.css">
 	<link rel="stylesheet" href="css/repeat/popup_search.css">
 	<script src="js/password_check.js"></script>
+	<script src="js/tel_check.js"></script>
 </head>
 <body>
     <div id="wrap">
@@ -27,7 +28,7 @@
 						<div class="box_login">
 							<div class="inp_text">
 								<p class="login_subTitle">아이디</p>
-								<input type="email" id="loginId" name="loginId" placeholder="아이디 또는 이메일 입력" >
+								<input type="email" id="loginId" name="loginId" placeholder="아이디 입력" >
 
 								<p class="login_subTitle">비밀번호</p>
 								<input type="password" id="pw" onchange="check_pw()" placeholder="비밀번호 (8~20자리 영문, 숫자 조합)" >
@@ -39,7 +40,11 @@
 								<input type="text" placeholder="닉네임 입력" >
 								<p class="login_subTitle">전화번호</p>
 								<input type="tel" placeholder="'-' 없이 입력">
-								<input type="button" class="btn_tel_check" value="인증">
+								<input type="button" class="btn_tel_check" value="인증" onclick="check_tel()">
+								<div id="tel_check_num_box">
+									<input type="tel" placeholder="인증번호 입력">
+									<input type="button" class="btn_tel_num_check" value="확인">
+								</div>
 							</div>
 						</div>
 						<div class="login_join">

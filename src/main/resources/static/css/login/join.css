@@ -101,6 +101,7 @@ img {
   margin-bottom: 50px;
   padding-left: 20px;
 }
+/*전화*/
 .inp_text > .btn_tel_check {
   background-color: #ffffff;
   color: #000000;
@@ -191,3 +192,30 @@ img {
   color: #ffffff;
 }
 
+/*전화 숨기기*/
+#tel_check_num_box {
+  display: none;
+  width: 594px;
+  height: 84px;
+  margin-bottom: 50px;
+ }
+#tel_check_num_box > input {
+  width: 594px;
+  height: 84px;
+  font-size: 21px;
+  color: #000;
+  border: solid 1.5px #3F3F3F;
+  outline: 0;
+  background-color: #CDCDCD;
+  padding-left: 20px;
+}
+#tel_check_num_box > .btn_tel_num_check {
+  background-color: #ffffff;
+  color: #000000;
+  width: 159px;
+  height: 62px;
+  padding: 0 0 0 0;
+  position: absolute;
+  top: 1050px;
+  left: 650px;
+}
