@@ -9,6 +9,7 @@
 	<link rel="stylesheet" href="css/repeat/header.css">
 	<link rel="stylesheet" href="css/repeat/footer.css">
 	<link rel="stylesheet" href="css/repeat/popup_search.css">
+	<script src="js/pwFind_telCheck.js"></script>
 </head>
 <body>
     <div id="wrap">
@@ -17,7 +18,7 @@
 
         <div id="content-wrap">
 			<div class="content-container">
-				<div class="wrap_box">
+				<div class="wrap_box" id="wrap_box">
 					<div class="select_wrap">
 						<div class="id_find"><a th:href="@{id_find}">아이디 찾기</a></div>
 						<div class="pw_find"><a th:href="@{pw_find}">비밀번호 찾기</a></div>
@@ -29,6 +30,12 @@
 
 						<div class="request_text">회원가입 시 등록한 전화번호을 입력해 주세요.</div>
 						<input type="text" class="tel_input" placeholder="전화번호 입력">
+						<input type="button" class="btn_telCheck" value="인증" onclick="check_tel()">
+
+						<div id="tel_check_num_box">
+							<input type="tel" placeholder="인증번호 입력">
+							<input type="button" class="btn_tel_num_check" value="확인">
+						</div>
 
 						<div class="btn_wrap">
 							<button type="button" class="btn_cancel"><a th:href="@{login}">취소</a></button>

@@ -9,6 +9,8 @@
 	<link rel="stylesheet" href="css/repeat/header.css">
 	<link rel="stylesheet" href="css/repeat/footer.css">
 	<link rel="stylesheet" href="css/repeat/popup_search.css">
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js" type="text/javascript"></script>
+	<script src="js/file_size_check.js"></script>
 </head>
 <body>
     <div id="wrap">
@@ -55,7 +57,7 @@
 						</tr>
 						<tr>
 							<th>⦁ 첨부파일</th>
-							<td><input type="file" name="FileName" class="file_add"></td>
+							<td><input type="file" onchange="fileCheck()" id="file_add" name="FileName" class="file_add"></td>
 						</tr>
 					</table>
 					<div class="button_wrap">

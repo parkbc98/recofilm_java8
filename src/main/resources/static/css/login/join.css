@@ -195,7 +195,7 @@ img {
 /*전화 숨기기*/
 #tel_check_num_box {
   display: none;
-  width: 594px;
+  width: 98%;
   height: 84px;
   margin-bottom: 50px;
  }
