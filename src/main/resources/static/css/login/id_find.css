@@ -104,6 +104,15 @@ a {
   display: none;
   margin-bottom: 50px;
 }
+#tel_check_num_box > p {
+  width: 544px;
+  height: 69px;
+  font-size: 17px;
+  color: #ca00ff;
+  background: transparent;
+  text-align: left;
+  margin: -50px 0 50px 230px;
+}
 #tel_check_num_box > input {
   width: 594px;
   height: 84px;
@@ -121,7 +130,7 @@ a {
   height: 62px;
   padding: 0 0 0 0;
   position: absolute;
-  top: 473px;
+  top: 543px;
   left: 760px;
 }
 
