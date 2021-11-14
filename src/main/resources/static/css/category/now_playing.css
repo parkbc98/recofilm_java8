@@ -107,16 +107,7 @@ ul li {
   color: #a9a9a9;
   background-color: #000000;
   line-height: 44px;
-}
-.movie_vote {
-  font-size: 23px;
-  line-height: 31px;
-  color: #dadada;
-  margin-bottom: 80px;
-  margin-top: 5px;
-}
-.vote_star {
-  color: #d14b4b;
+  margin-bottom: 140px;
 }
 
 .similar_clear {
