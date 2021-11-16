@@ -127,7 +127,7 @@ a {
   margin-bottom: 50px;
 }
 .page_div > nav{
-  width: 360px;
+  width: max-content;
   height: 45px;
 }
 .page_div > nav > ul li {

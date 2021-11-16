@@ -153,3 +153,60 @@ a:link a:visited a:hover {
   margin-left: -2px;
   border: none;
 }
+
+/*페이지네이션*/
+a {
+  text-decoration: none;
+}
+.page_div {
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+  width: max-content;
+  height: max-content;
+  margin-top: 70px;
+  margin-bottom: 50px;
+}
+.page_div > nav{
+  width: max-content;
+  height: 45px;
+}
+.page_div > nav > ul li {
+  float: left;
+  list-style: none;
+}
+.prevNext {
+  margin: 0 40px 0 40px;
+  height: 45px;
+  line-height: 45px;
+}
+.prevNext > img {
+  width: 14px;
+  height: 23px;
+  vertical-align:middle;
+}
+.page-item-num > a {
+  font-size: 19px;
+  line-height: 45px;
+  color: #a2a2a2;
+  background: transparent;
+  vertical-align:middle;
+  text-align: center;
+  display: block;
+  width: 45px;
+  height: 45px;
+  margin: 0 5px 0 5px;
+}
+.page-item-active > span {
+  text-align: center;
+  color: #FFFFFF;
+  font-size: 19px;
+  line-height: 45px;
+  vertical-align:middle;
+  display: block;
+  width: 45px;
+  height: 45px;
+  margin: 0 5px 0 5px;
+  border-radius: 50%;
+  background-color: #a835c6;
+}
