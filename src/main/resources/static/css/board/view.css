@@ -42,23 +42,37 @@ a {
 }
 .title {
   height: 46px;
-  font-size: 35px;
-  margin: 0 0 16px 32px;
+  margin: 0 0 20px 32px;
+  display:inline-block;
+  vertical-align:middle;
 }
-.title > span {
+.title > #title {
+  font-size: 35px;
+  display:inline-block;
+  vertical-align:middle;
+}
+.title > #view_title {
   font-size: 26px;
   line-height: 46px;
   color: #a835c6;
+  display:inline-block;
+  vertical-align:middle;
 }
 .regtime_hits {
   margin: 0 0 20px 48px;
   color: #bebebe;
   font-size: 17px;
 }
+.regtime_hits > p {
+  font-size: 20px;
+  color: #FFFFFF;
+  margin-bottom: 6px;
+}
 
 /*테이블 내용*/
 .view_content {
   width: 1200px;
+  padding: 0 40px 0 40px;
   min-height: 600px;
   position: relative;
   left: 50%;
@@ -79,7 +93,9 @@ a {
 /*컨트롤 버튼*/
 .control_btn_wrap {
   float: right;
-  margin: 10px 280px 200px 0;
+  position: absolute;
+  top: 320px;
+  right: 350px;
 }
 .control_btn_wrap > button {
   font-size: 17px;
@@ -101,4 +117,80 @@ a {
 }
 .btn_delete > a {
   color: #a835c6;
+}
+
+/*댓글*/
+.comment {
+  margin: 0 380px 25px 380px;
+}
+.comment_btn_group {
+  width: max-content;
+  height: 28px;
+  position: relative;
+  top: -75px;
+  left: 40px;
+}
+#comment_logo > img {
+  width: 34px;
+  height: 28px;
+  margin-right: 10px;
+  display:inline-block;
+  vertical-align:middle;
+}
+#comment_id {
+  font-size: 16px;
+  line-height: 28px;
+  vertical-align: middle;
+  color: #FFFFFF;
+  margin-right: 10px;
+}
+#comment_count {
+  font-size: 16px;
+  line-height: 28px;
+  vertical-align: middle;
+  color: #FFFFFF;
+}
+.comment_title {
+  margin: -40px 0 -10px 5px;
+  font-size: 22px;
+  color: #FFFFFF;
+}
+
+.comment_content_wrap {
+  padding: 25px 0 25px 62px;
+  width: 1068px;
+  height: max-content;
+  border-bottom: 1px solid #8f8f8f;
+}
+.nickname {
+  font-size: 16px;
+  color: #FFFFFF;
+  font-weight: bold;
+  margin-bottom: 9px;
+}
+.comment_content {
+  font-size: 16px;
+  color: #FFFFFF;
+  margin-bottom: 9px;
+}
+.comment_time {
+  font-size: 13px;
+  color: #FFFFFF;
+}
+
+.write_box {
+  width: 1149px;
+  height: 120px;
+  display: block;
+  border-radius: 8px;
+  background: transparent;
+  border: 1px solid #767676;
+}
+.write_input {
+  width: 1132px;
+  min-height: 80px;
+  height: max-content;
+  padding: 0 0 0 9px;
+  background: transparent;
+  color: #FFFFFF;
 }

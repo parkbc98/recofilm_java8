@@ -3,14 +3,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
-    <title>recofilm</title>
+    <title>join</title>
 
+	<script src="//code.jquery.com/jquery-3.3.1.min.js"></script>
     <link rel="stylesheet" href="css/login/join.css">
 	<link rel="stylesheet" href="css/repeat/header.css">
 	<link rel="stylesheet" href="css/repeat/footer.css">
 	<link rel="stylesheet" href="css/repeat/popup_search.css">
 	<script src="js/password_check.js"></script>
 	<script src="js/tel_check.js"></script>
+	<script src="js/windowPopup.js"></script>
 </head>
 <body>
     <div id="wrap">
@@ -39,10 +41,10 @@
 								<p class="login_subTitle">닉네임</p>
 								<input type="text" placeholder="닉네임 입력" >
 								<p class="login_subTitle">전화번호</p>
-								<input type="tel" placeholder="'-' 없이 입력">
-								<input type="button" class="btn_tel_check" value="인증" onclick="check_tel()">
+								<input type="text" id="p_tel_num" class="p_tel_num" placeholder="'-' 없이 입력" >
+								<input type="button" class="btn_tel_check" value="인증" onclick="windowPopup()">
 								<div id="tel_check_num_box">
-									<input type="tel" placeholder="인증번호 입력">
+									<input type="text" placeholder="인증번호 입력">
 									<input type="button" class="btn_tel_num_check" value="확인">
 									<p>인증번호를 발송했습니다. (유효시간 30분)<br>
 										인증번호가 오지 않으면 입력하신 정보가 정확한지 확인하여 주세요.<br>
@@ -51,7 +53,8 @@
 							</div>
 						</div>
 						<div class="login_join">
-							<button type="submit" class="btn_login" id="btn_login" disabled="disabled" th:href="@{join_success}">가입하기</button>
+							<button type="submit" class="btn_login" id="btn_login"
+									value="false" disabled="disabled" onclick="telCheckOk()">가입하기</button>
 							<button type="button" class="btn_join" th:href="@{index}">취소</button>
 						</div>
 						

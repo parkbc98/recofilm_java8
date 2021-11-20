@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="//code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script src="js/windowPopup.js"></script>
+    <link rel="stylesheet" href="css/popup_screen.css">
+
+    <script>
+        window.onload = function setTelNum() {
+            document.getElementById("c_tel_num").value =
+                opener.document.getElementById("p_tel_num").value;
+        }
+    </script>
+</head>
+<body>
+
+    <div id="tel_check_num_box">
+        <input type="text" id="c_tel_num" value="">
+        <input type="text" placeholder="인증번호 입력">
+        <input type="button" class="btn_tel_num_check" value="확인" onclick="window.close()">
+        <p>인증번호를 발송했습니다. (유효시간 30분)<br>
+            인증번호가 오지 않으면 입력하신 정보가 정확한지 확인하여 주세요.<br>
+            이미 가입된 번호이거나, 가상전화번호는 인증번호를 받을 수 없습니다.<br></p>
+    </div>
+
+</body>
+</html>

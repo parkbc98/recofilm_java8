@@ -34,6 +34,12 @@ public class IndexController {
     @GetMapping("index")
     public String home(){ return "index"; }
 
+    @GetMapping("popup_screen")
+    public String popup_screen(){ return "popup_screen"; }
+
+    @GetMapping("popup_screen_ok")
+    public String popup_screen_ok(){ return "popup_screen_ok"; }
+
     @GetMapping("movie_info")
     public String movie_info(){ return "movie_info"; }
 

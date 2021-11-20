@@ -18,8 +18,9 @@
         <div id="content-wrap">
 			<div class="content-container">
 				<div class="view_header">
-					<div class="title"><span id="view_title">[자유글]</span> 영화 추천합니다~!</div>
+					<div class="title"><span id="view_title">[자유글]</span> <span id="title">영화 추천합니다~!</span></div>
 					<div class="regtime_hits">
+						<p>글쓴이</p>
 						<span id="regtime">2021-01-01</span>
 						<span id="hits">조회 <span id="hits_num">120</span></span>
 					</div>
@@ -38,6 +39,30 @@
 				<div class="control_btn_wrap">
 					<button class="btn_delete"><a th:href="@{board}">삭제</a></button>
 					<button class="btn_rewrite"><a th:href="@{write}">수정</a></button>
+				</div>
+			</div>
+
+			<div class="comment">
+				<div class="comment_btn_group">
+					<span id="comment_logo"><img src="img/board/comment.png"></span>
+					<span id="comment_id">댓글</span><span id="comment_count">2</span>
+				</div>
+
+				<p class="comment_title">댓글</p>
+				<div class="comment_content_wrap">
+					<p class="nickname">닉네임</p>
+					<p class="comment_content">이거 저도 정말 재밌게 본 영화입니다! 강추!</p>
+					<p class="comment_time">2021.11.16 14:51</p>
+				</div>
+				<div class="comment_content_wrap">
+					<p class="nickname">닉네임2</p>
+					<p class="comment_content">이 영화 저도 한번 봐야겠어요!</p>
+					<p class="comment_time">2021.11.16 14:51</p>
+				</div>
+
+				<div class="write_box">
+					<p class="nickname">작성자 닉네임</p>
+					<input type="text" placeholder="댓글을 남겨보세요" class="write_input">
 				</div>
 			</div>
         </div>
