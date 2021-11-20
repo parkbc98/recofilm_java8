@@ -178,7 +178,7 @@ a {
   color: #FFFFFF;
 }
 
-.write_box {
+.write_comment_container {
   width: 1149px;
   height: 120px;
   display: block;
@@ -186,9 +186,9 @@ a {
   background: transparent;
   border: 1px solid #767676;
 }
-.write_input {
+#comment {
   width: 1132px;
-  min-height: 80px;
+  min-height: 40px;
   height: max-content;
   padding: 0 0 0 9px;
   background: transparent;

@@ -9,6 +9,7 @@
 	<link rel="stylesheet" href="css/repeat/header.css">
 	<link rel="stylesheet" href="css/repeat/footer.css">
 	<link rel="stylesheet" href="css/repeat/popup_search.css">
+	<script src="js/comment.js"></script>
 </head>
 <body>
     <div id="wrap">
@@ -47,22 +48,39 @@
 					<span id="comment_logo"><img src="img/board/comment.png"></span>
 					<span id="comment_id">댓글</span><span id="comment_count">2</span>
 				</div>
+				<form id="commentListForm" name="commentListForm" method="post">
+					<div id="commentList">
+						<!-- (예시)
+						<p class="comment_title">댓글</p>
+						<div class="comment_content_wrap">
+							<p class="nickname">닉네임</p>
+							<p class="comment_content">이거 저도 정말 재밌게 본 영화입니다! 강추!</p>
+							<p class="comment_time">2021.11.16 14:51</p>
+						</div>
+						-->
 
-				<p class="comment_title">댓글</p>
-				<div class="comment_content_wrap">
-					<p class="nickname">닉네임</p>
-					<p class="comment_content">이거 저도 정말 재밌게 본 영화입니다! 강추!</p>
-					<p class="comment_time">2021.11.16 14:51</p>
-				</div>
-				<div class="comment_content_wrap">
-					<p class="nickname">닉네임2</p>
-					<p class="comment_content">이 영화 저도 한번 봐야겠어요!</p>
-					<p class="comment_time">2021.11.16 14:51</p>
-				</div>
 
-				<div class="write_box">
-					<p class="nickname">작성자 닉네임</p>
-					<input type="text" placeholder="댓글을 남겨보세요" class="write_input">
+					</div>
+				</form>
+
+				<div class="write_comment_container">
+					<form id="commentForm" name="commentForm" method="post">
+						<br><br>
+						<div>
+							<table class="table">
+								<tr>
+									<td>
+										<textarea rows="3" cols="30" id="comment" name="comment" placeholder="댓글을 입력하세요"></textarea>
+										<br>
+										<div>
+											<a href='#' onClick="fn_comment('${result.code }')" class="btn pull-right btn-success">등록</a>
+										</div>
+									</td>
+								</tr>
+							</table>
+						</div>
+						<input type="hidden" id="b_code" name="b_code" value="${result.code }" />
+					</form>
 				</div>
 			</div>
         </div>
