@@ -9,7 +9,6 @@ function check_pw(){
         document.getElementById('check').style.color='red';
         document.getElementById('pw').style.marginBottom='5px'
         document.getElementById('pw').value='';
-        document.getElementById('btn_login').disabled = false;
     }
     for(var i=0;i<SC.length;i++){
         if(pw.indexOf(SC[i]) != -1){
@@ -21,20 +20,22 @@ function check_pw(){
         document.getElementById('check').style.color='red';
         document.getElementById('pw').style.marginBottom='5px'
         document.getElementById('pw').value='';
-        document.getElementById('btn_login').disabled = false;
     }
     if(document.getElementById('pw').value !='' && document.getElementById('pw2').value!=''){
         if(document.getElementById('pw').value==document.getElementById('pw2').value){
             document.getElementById('check2').innerHTML='비밀번호가 일치합니다.'
             document.getElementById('check2').style.color='blue';
             document.getElementById('pw2').style.marginBottom='5px'
-            document.getElementById('btn_login').disabled = false;
+            $('#pw_boolean').val('true');
+            var test = document.getElementById("pw_boolean");
+            console.log(test.value);
+            checkPW = true;
+            finalCheck();
         }
         else{
             document.getElementById('check2').innerHTML='비밀번호가 일치하지 않습니다.';
             document.getElementById('check2').style.color='red';
             document.getElementById('pw2').style.marginBottom='5px'
-            document.getElementById('btn_login').disabled = true;
         }
     }
 }

@@ -13,6 +13,7 @@
 	<script src="js/password_check.js"></script>
 	<script src="js/tel_check.js"></script>
 	<script src="js/windowPopup.js"></script>
+	<script src="js/join_check.js"></script>
 </head>
 <body>
     <div id="wrap">
@@ -30,7 +31,7 @@
 						<div class="box_login">
 							<div class="inp_text">
 								<p class="login_subTitle">아이디</p>
-								<input type="email" id="loginId" name="loginId" placeholder="아이디 입력" >
+								<input type="text" id="loginId" name="loginId" placeholder="아이디 입력" >
 
 								<p class="login_subTitle">비밀번호</p>
 								<input type="password" id="pw" onchange="check_pw()" placeholder="비밀번호 (8~20자리 영문, 숫자 조합)" >
@@ -50,11 +51,15 @@
 										인증번호가 오지 않으면 입력하신 정보가 정확한지 확인하여 주세요.<br>
 										이미 가입된 번호이거나, 가상전화번호는 인증번호를 받을 수 없습니다.<br></p>
 								</div>
+								<input type="hidden" value="false" id="pw_boolean" onchange="pwChange()">
+								<!-- 비번 체크후 true로 갑변경 -->
+								<input type="hidden" value="false" id="tel_boolean" onchange="telChange()">
+								<!-- 팝업창 닫히면 true -->
 							</div>
 						</div>
 						<div class="login_join">
 							<button type="submit" class="btn_login" id="btn_login"
-									value="false" disabled="disabled" onclick="telCheckOk()">가입하기</button>
+									value="false" disabled="disabled" >가입하기</button>
 							<button type="button" class="btn_join" th:href="@{index}">취소</button>
 						</div>
 						
