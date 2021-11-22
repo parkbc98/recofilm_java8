@@ -65,15 +65,15 @@
 
 				<div class="write_comment_container">
 					<form id="commentForm" name="commentForm" method="post">
-						<br><br>
 						<div>
 							<table class="table">
 								<tr>
 									<td>
-										<textarea rows="3" cols="30" id="comment" name="comment" placeholder="댓글을 입력하세요"></textarea>
+										<p id="user_id">내 아이디</p>
+										<textarea id="comment" name="comment" placeholder="댓글을 입력하세요"></textarea>
 										<br>
 										<div>
-											<a href='#' onClick="fn_comment('${result.code }')" class="btn pull-right btn-success">등록</a>
+											<a href='#' onClick="fn_comment('${result.code }')" id="btn_write" class="btn pull-right btn-success">등록</a>
 										</div>
 									</td>
 								</tr>

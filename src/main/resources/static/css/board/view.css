@@ -180,11 +180,17 @@ a {
 
 .write_comment_container {
   width: 1149px;
-  height: 120px;
+  min-height: 120px;
   display: block;
   border-radius: 8px;
   background: transparent;
-  border: 1px solid #767676;
+  border: 2px solid #767676;
+}
+#user_id {
+  margin: 16px 0 10px 17px;
+  color: #FFFFFF;
+  font-size: 16px;
+  font-weight: bold;
 }
 #comment {
   width: 1132px;
@@ -192,5 +198,12 @@ a {
   height: max-content;
   padding: 0 0 0 9px;
   background: transparent;
+  border: none;
   color: #FFFFFF;
+}
+#btn_write {
+  float: right;
+  color: #be3de0;
+  font-size: 16px;
+  margin: 0 25px 21px 0;
 }
