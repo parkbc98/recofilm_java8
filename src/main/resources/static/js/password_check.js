@@ -35,7 +35,7 @@ function check_pw(){
         else{
             document.getElementById('check2').innerHTML='비밀번호가 일치하지 않습니다.';
             document.getElementById('check2').style.color='red';
-            document.getElementById('pw2').style.marginBottom='5px'
+            document.getElementById('pw2').style.marginBottom='5px';
         }
     }
 }

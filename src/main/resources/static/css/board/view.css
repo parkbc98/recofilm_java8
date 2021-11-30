@@ -177,7 +177,7 @@ a {
   font-size: 13px;
   color: #FFFFFF;
 }
-
+/*댓글작성*/
 .write_comment_container {
   width: 1149px;
   min-height: 120px;
@@ -193,10 +193,11 @@ a {
   font-weight: bold;
 }
 #comment {
-  width: 1132px;
+  resize: vertical;
+  width: 1106px;
   min-height: 40px;
   height: max-content;
-  padding: 0 0 0 9px;
+  margin: 0 0 0 26px;
   background: transparent;
   border: none;
   color: #FFFFFF;

@@ -9,8 +9,14 @@
 	<link rel="stylesheet" href="css/repeat/header.css">
 	<link rel="stylesheet" href="css/repeat/footer.css">
 	<link rel="stylesheet" href="css/repeat/popup_search.css">
+	<script src="http://code.jquery.com/jquery-latest.js"></script>
+	<script src="/js/loading_spiner.js"></script>
 </head>
 <body>
+	<div id="loader_back"></div>
+	<div class="loader"></div>
+	<p class="loader_text">Please wait . . .</p>
+
     <div id="wrap">
 		<div th:replace="/repeat/header.html :: header"></div>
 		<div th:replace="/repeat/header.html :: menu"></div>
